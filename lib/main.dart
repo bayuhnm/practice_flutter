@@ -1,7 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:practice_flutter/detail_screen.dart';
 import 'main_screen.dart';
 
 void main() {
