@@ -31,11 +31,11 @@ class TourismPlace {
 var tourismPlaceList = [
   TourismPlace(
     name: 'Kuta Beach',
-    location: 'Kuta District',
+    location: 'Jl. Pantai Kuta, Kuta, Kabupaten Badung',
     imageAsset: 'assets/images/kuta1.jpg',
     description:
         "Kuta is a tourist area, administratively an urban village (kelurahan), and the capital of Kuta District, Badung Regency, southern Bali, Indonesia. A former fishing village, it was one of the first towns on Bali to see substantial tourist development, and as a beach resort remains one of Indonesia's major tourist destinations. It is known internationally for its long sandy beach, varied accommodation, many restaurants and bars, and many renowned surfers who visit from Australia",
-    facilities: ['Open Everyday', 'Free', '24 Hours'],
+    facilities: ['Open Everyday', 'Ticket Free', '24 Hours'],
     id: 'place2',
     rating: 4.6,
     type: 'Hot This Month',
@@ -46,11 +46,11 @@ var tourismPlaceList = [
   ),
   TourismPlace(
     name: 'The Keranjang Bali',
-    location: 'Bangli District',
+    location: 'Jl. By Pass Ngurah Rai No. 97, Badung',
     imageAsset: 'assets/images/thekeranjang1.jpg',
     description:
         "Penglipuran village is a beautiful highland village in the regency of Bangli in East Bali, best known for its well-preserved layout and culture. While most of its residents have embraced modernity, its individual compounds are well-kept to look traditional. Manicured gardens line the single stone-paved street that runs through the centre of the village toward the local temple, and age-old arched entrance gates and walls conceal each house.",
-    facilities: ['Open Everyday', 'Free', '10 AM - 9 PM'],
+    facilities: ['Open Everyday', 'Ticket Free', '10 AM - 9 PM'],
     id: 'place4',
     rating: 4.5,
     type: 'New Place',
@@ -61,11 +61,11 @@ var tourismPlaceList = [
   ),
   TourismPlace(
     name: 'Garuda Wisnu Kencana',
-    location: 'Raya Uluwatu',
+    location: 'Jl. Raya Uluwatu, Desa Ungasan, Kuta Selatan, Kabupaten Badung',
     imageAsset: 'assets/images/gwk1.jpg',
     description:
         "Rise from the rugged hills of Bali's Bukit Peninsula, the magnificent Garuda Wisnu Kencana statue stands watch over the island.  The towering statue is Bali's most iconic landmark and depicts the Hindu God Wisnu, atop his mount, the mythical eagle, Garuda. The Garuda is the national emblem of Indonesia, an enduring symbol of freedom from oppression. Soaring to a height of over 120 meters, this is one of the tallest monumental statues in the world, higher than both the Statue of Liberty and Christ the Redeemer.",
-    facilities: ['Open Everyday', 'Rp. 85.000,-', '9 AM - 7.30 PM'],
+    facilities: ['Open Everyday', 'Ticket Rp. 85.000,-', '9 AM - 7.30 PM'],
     id: 'place1',
     rating: 4.9,
     type: 'Popular Now',
@@ -76,11 +76,11 @@ var tourismPlaceList = [
   ),
   TourismPlace(
     name: 'Bedugul',
-    location: 'Baturiti District',
+    location: 'Batunya Village, Kec. Baturiti, Kabupaten Tabanan',
     imageAsset: 'assets/images/bedugul1.jpg',
     description:
         "Bedugul is the name of both a small city and a mountain-lake resort area, which Balinese have long used for weekend retreats. Bedugul is an excellent base for walking trips around the lakes and surrounding hills. Bedugul is located in a high plateau at the center of the Island. Cool air and mists are natural for the place. Bedugul is a resort in Beratan Mountains,Beratan Lake and also the Ulun Danu.",
-    facilities: ['Open Everyday', 'Rp. 20.000,-', '7 AM - 7 PM'],
+    facilities: ['Open Everyday', 'Ticket Rp. 20.000,-', '7 AM - 7 PM'],
     id: 'place3',
     rating: 4.8,
     type: 'Great For Picnic',
@@ -91,11 +91,11 @@ var tourismPlaceList = [
   ),
   TourismPlace(
     name: 'Penglipuran Village',
-    location: 'Bangli District',
+    location: 'Jl. Penglipuran, Kubu, Kec. Bangli, Kabupaten Bangli',
     imageAsset: 'assets/images/penglipuran1.png',
     description:
         "Penglipuran village is a beautiful highland village in the regency of Bangli in East Bali, best known for its well-preserved layout and culture. While most of its residents have embraced modernity, its individual compounds are well-kept to look traditional. Manicured gardens line the single stone-paved street that runs through the centre of the village toward the local temple, and age-old arched entrance gates and walls conceal each house.",
-    facilities: ['Open Everyday', 'Rp. 30.000,-', '8 AM - 5 PM'],
+    facilities: ['Open Everyday', 'Ticket Rp. 30.000,-', '8 AM - 5 PM'],
     id: 'place4',
     rating: 4.7,
     type: 'Cultured Village',
