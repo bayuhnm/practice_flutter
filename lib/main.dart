@@ -1,6 +1,8 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:practice_flutter/provider/done_tourism_provider.dart';
+import 'package:provider/provider.dart';
 import 'main_screen.dart';
 
 void main() {
@@ -12,12 +14,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Contacts',
-      theme: ThemeData(),
-      home: MainScreen(),
-      debugShowCheckedModeBanner: false,
+    return ChangeNotifierProvider(
+      create: (context) => DoneTourismProvider(),
+      child: MaterialApp(
+        title: 'Travel',
+        theme: ThemeData(),
+        home: MainScreen(),
+        debugShowCheckedModeBanner: false,
+      ),
     );
   }
 }
-
