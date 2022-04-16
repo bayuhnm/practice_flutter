@@ -2,7 +2,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:practice_flutter/done_tourism_list.dart';
+import 'package:practice_flutter/model/tourism_place.dart';
 import 'package:practice_flutter/tourism_list.dart';
+import 'done_tourism_list.dart';
 
 
 class MainScreen extends StatefulWidget {
@@ -13,7 +15,7 @@ class MainScreen extends StatefulWidget {
 }
 
 class _MainScreenState extends State<MainScreen> {
-
+final List<TourismPlace> doneTourismPlaceList = [];
   @override
   Widget build(BuildContext context) {
     return Scaffold(

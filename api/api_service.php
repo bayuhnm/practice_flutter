@@ -10,19 +10,22 @@
     if(!isset($_POST['action'])) $_POST['action'] = "";
 
     if($_POST['action'] == 'create'){        
-        if( !isset($_POST['title']) ||
+        if( !isset($_POST['name']) ||
             !isset($_POST['description']) ||
             !isset($_POST['openDay']) ||
             !isset($_POST['openTime']) ||
             !isset($_POST['price']) ||
             !isset($_POST['location']) ||
-            !isset($_POST['img1'])){
+            !isset($_POST['imageAsset']) ||
+            !isset($_POST['img1']) ||
+            !isset($_POST['img2']) ||
+            !isset($_POST['img3'])){
             echo "Data tidak lengkap!";
         }
         else{
-            $sql = "INSERT INTO `tourismlistplace` (`id`, `title`, `description`, `openDay`, `openTime`, `price`, `location`, `img`, `img1`, `img2`, `img3`) 
-                    VALUES (NULL, '".$_POST['title']."', '".str_replace("'", "\'", $_POST['description'])."', '".$_POST['openDay']."', '".$_POST['openTime']."', '".
-                    $_POST['price']."', '".$_POST['location']."', '".$_POST['img']."', '".$_POST['img1']."', '".$_POST['img2']."', '".$_POST['img3']."');";
+            $sql = "INSERT INTO `tourismlistplace` (`id`, `name`, `description`, `openDay`, `openTime`, `price`, `location`, `imageAsset`, `img1`, `img2`, `img3`) 
+                    VALUES (NULL, '".$_POST['name']."', '".str_replace("'", "\'", $_POST['description'])."', '".$_POST['openDay']."', '".$_POST['openTime']."', '".
+                    $_POST['price']."', '".$_POST['location']."', '".$_POST['imageAsset']."', '".$_POST['img1']."', '".$_POST['img2']."', '".$_POST['img3']."');";
             echo $sql.'<br><br>';
             $query = mysqli_query($koneksi, $sql);
             if($query) echo 'Create Successfully';
@@ -38,7 +41,7 @@
             $query = mysqli_query($koneksi, $sql);  
             if($query){
                 if($user = mysqli_fetch_array($query)){
-                    $data = ['title', 'description', 'openDay', 'openTime', 'price', 'location', 'img', 'img1', 'img2', 'img3'];
+                    $data = ['name', 'description', 'openDay', 'openTime', 'price', 'location', 'imageAsset', 'img1', 'img2', 'img3'];
                     for($a = 0; $a < 10; $a++){
                         if(isset($_POST[$data[$a]])){
                             $sql = "UPDATE `tourismlistplace` SET `".$data[$a]."` = '".str_replace("'", "\'", $_POST[$data[$a]])."' WHERE `tourismlistplace`.`id` = ".$_POST['id'];
